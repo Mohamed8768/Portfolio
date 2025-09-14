@@ -1,0 +1,244 @@
+   @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: #f8f9fb;
+      color: #333;
+    }
+    header {
+      height: 70vh;
+      background-image: url(https://i.pinimg.com/736x/03/3f/17/033f176d0868ba0ff2b005a8aee7ce89.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(90%); /* تقلل الإضاءة */
+      color: #fffdfd;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    #palestine1 {
+      font-size: 1.5rem;
+      color: #000000;
+    }
+    header h1 {
+      font-size: 5rem; 
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.3rem;
+      opacity: 0.9;
+    }
+    nav {
+      background: #ff1e00d2;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    #about {
+      background: #fff;
+    }
+    #about h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #e40e0e;
+    }
+    #about p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .palestine-section {
+      height: 100vh;
+      background: linear-gradient(
+        to bottom,
+        black 33%,   /* شريط أسود */
+        white 33% 66%,  /* شريط أبيض */
+        green 66%     /* شريط أخضر */
+      );
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    /* مثلث أحمر على اليسار */
+    .palestine-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 50vh solid transparent;
+      border-bottom: 50vh solid transparent;
+      border-left: 200px solid red;
+    }
+
+    .palestine-section span {
+      color: red; /* القلب */
+      font-size: 2.5rem;
+    }
+    .palestine-bg {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(
+    to bottom,
+    black 25%,   /* أسود */
+    white 25% 50%,  /* أبيض */
+    green 50% 75%   /* أخضر */
+  );
+  position: relative;
+}
+
+/* مثلث أحمر ناحية اليسار */
+.palestine-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-left: 200px solid red;
+}
+
+    #skills {
+      padding: 80px 20px;
+    }
+    #skills h2 {
+      color: #764ba2;
+      margin-bottom: 20px;
+    }
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .skills-list span {
+      background: #667eea;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .skills-list span:hover {
+      background: #764ba2;
+    }
+    #projects {
+      background: #fff;
+    }
+    #projects h2 {
+      color: #fc6602;
+      margin-bottom: 30px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #fdfdfd;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 { margin: 15px 0 5px; color: #764ba2; }
+    .card p { padding: 0 15px 20px; font-size: 0.95rem; }
+.center-image {
+  display: block;       /* يخلي الصورة عنصر block */
+  margin: 0 auto;       /* يخلي الهوامش يمين وشمال auto = الصورة في النص */
+  width: 30%;           /* تقدر تغير الحجم زي ما تحب */
+  border-radius: 15px;  /* يخلي حواف الصورة مدورة */} 
+
+
+
+#contact {
+      background: #000000;
+      padding: 40px;
+      text-align: right;
+      color: #e91515;
+    }   
+#contact h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+#contact p {
+      font-size: 1.1rem;
+    }
+#contact h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #00ff80;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.contact-list a {
+  color: #b84e08;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+  color: #419399;
+}
+
+ footer {
+      background: #000000f1;
+      color: #fffefe;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
